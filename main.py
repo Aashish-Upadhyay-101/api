@@ -2,7 +2,6 @@ from fastapi import FastAPI, HTTPException, Depends, status
 from pydantic import BaseModel
 from sqlmodel import Session, select, or_, and_
 from fastapi.middleware.cors import CORSMiddleware
-import numpy as np
 from models import FriendRequest, FriendRequestCreate, Invite, User, UserCreate, UserLogin, UserProfile, create_access_token, create_db_and_tables, get_db, get_password_hash, verify_password
 
 app = FastAPI()
